@@ -1,0 +1,9 @@
+div.MetricView {
+    display: block;
+    max-width: 1200px;
+    max-height: 10%;
+}
+
+div.MetricView h1 {
+    margin-bottom: 24px;
+}

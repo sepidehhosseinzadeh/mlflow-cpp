@@ -1,0 +1,14 @@
+artifact_uri: /home/sepideh/ecopia-zebra/mlflow-0.7/mlruns/1/770cf62b63684adfae996f808be32aa8/artifacts
+end_time: null
+entry_point_name: mlflow_tracking.py
+experiment_id: 1
+lifecycle_stage: active
+name: ''
+run_uuid: 770cf62b63684adfae996f808be32aa8
+source_name: example/quickstart
+source_type: 2
+source_version: null
+start_time: 1541800317896
+status: 1
+tags: []
+user_id: sepideh

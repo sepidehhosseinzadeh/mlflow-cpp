@@ -1,0 +1,33 @@
+cmds:
+-------------------------------------------------------------------------------
+python mlflow_api.py --task create_exp --exp_name run_00
+python mlflow_api.py --task list_exp
+python mlflow_api.py --task run_package_exp --no_conda 1 --uri ~/mlflow-0.6.0/examples/sklearn_elasticnet_wine/ --exp_id 1 --param_val alpha=0.9
+python mlflow_api.py --task exp_ui_local
+python mlflow_api.py --task exp_ui_launch
+python mlflow_api.py --task delete_exp --exp_id 0
+
+
+install:
+-------------------------------------------------------------------------------
+
+add files of api: docker cp  ~/mlflow-api/.  CONTAINER_ID:/mlflow/mlflow-api/
+
+docker build -t mlflow .
+docker run -p 5000:5000 mlflow
+
+- In another terminal: run "docker ps" to get the CONTAINER_ID 
+sudo docker exec -it CONTAINER_ID bash
+- Commit the changes to a new container "mlflow-v0" and exit:
+sudo docker commit CONTAINER_ID mlflow-v0 
+
+Installing nvm:
+curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.11/install.sh | bash
+Installing node and npm:
+nvm install node
+nvm use node
+nvm install --lts
+nvm use --lts
+
+
+
