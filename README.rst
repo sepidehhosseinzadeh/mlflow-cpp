@@ -2,7 +2,7 @@
 MLflow
 ====================
 
-**Note:** The current repository is from https://mlflow.org/ 
+**Note:** CPP version of the repository https://mlflow.org/ 
 
 For documentation, checkout https://mlflow.org/docs/latest/quickstart.html  
 
