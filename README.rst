@@ -2,6 +2,8 @@
 MLflow
 ====================
 
+MLflow is an open source platform to manage the ML lifecycle, including experimentation, reproducibility and deployment.
+
 **Note:** CPP version of the repository https://mlflow.org/ 
 
 For documentation, checkout https://mlflow.org/docs/latest/quickstart.html  
