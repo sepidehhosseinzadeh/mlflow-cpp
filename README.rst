@@ -1,5 +1,5 @@
 ====================
-C++ version of MLflow
+*C++ version of MLflow + Dockerization of coding environment + S3 capability*
 ====================
 
 MLflow is an open source platform to manage the ML lifecycle, including experimentation, reproducibility and deployment.
@@ -12,7 +12,7 @@ Official documentation for MLflow can be found at https://mlflow.org/docs/latest
 The Github page, https://github.com/mlflow/mlflow/
 
 
-Installing
+*Installing*
 ----------
 
 **Server**
