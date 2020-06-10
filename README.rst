@@ -4,7 +4,7 @@ C++ version of MLflow + Dockerization of coding environment + S3 capability
 MLflow is an open source platform to manage the ML lifecycle, including experimentation, reproducibility and deployment.
 This repository added the C++ version of Mlflow. Also added Dockerization of coding environment and S3 capabilities. 
 
-![Architecture](Architecture.png)
+![Architecture](./Architecture.png)
 
 Documentation of MLflow
 ========================================
@@ -36,7 +36,7 @@ Open a aws machine which the Security Group is "all_port". SSH to the machine.
 
 Client
 ====================
-Inside your machine, have a docker and install all the requirement libraries to run your code. Also, make sure to have ecopia-zebra/mlflow-0.7.
+Inside your machine, have a docker and install all the requirement libraries to run your code. Also, make sure to have mlflow-0.7.
 
 Build a docker:
   
@@ -55,8 +55,8 @@ Run any Python/C++ code using command:
   MLFLOW_TRACKING_URI=http://aws-machine-public-ip:5000 ./my-script (c++)
 
 
-### Running a Sample App With the Tracking API
-
+Running a Sample App With the Tracking API
+============================================================
 The programs in ``examples`` use the MLflow Tracking API. For instance, run::
 
     python examples/quickstart/mlflow_tracking.py
@@ -81,7 +81,7 @@ Checkout example file at mlflow-0.7/mlflow/cpp/test/mlflow_ex.cpp
 Basic logging functions
 ========================================
 **Python:**
-
+====================
 create_experiment() creates a new experiment and returns its ID. Runs can be launched under the experiment by passing the experiment ID to mlflow.start_run.
 
 set_experiment() sets an experiment as active. If the experiment does not exist, creates a new experiment. If you do not specify an experiment in mlflow.start_run(), new runs are launched under this experiment.
@@ -118,7 +118,7 @@ compelete mlflow python api: https://mlflow.org/docs/latest/python_api/index.htm
 
 
 **C++:**
-
+====================
 createRun() creates a run. 
 
 logParam() logs a key-value parameter in the currently active run. The keys and values are both strings.
@@ -138,7 +138,7 @@ logDockerImageName() logs the name of the future committed current docker image.
 setTag() sets a tag in key, value form.
 
 **Note:** 
-  
+====================  
   For creating an experiment in c++, use comand-line command:
 
     MLFLOW_TRACKING_URI=server_url:5000 python ecopia-zebra/mlflow-0.7/mlflow/cli.py experiments create name_of_experiment 
