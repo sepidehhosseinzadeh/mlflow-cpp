@@ -4,7 +4,7 @@ MLflow is an open source platform to manage the ML lifecycle, including experime
 This repository added the C++ version of Mlflow. Also added Dockerization of coding environment and S3 capabilities. 
 
 
-<img src="Architecture.png" alt="Architecture" width="100" height="100">
+<img src="Architecture.png" alt="Architecture" width="500" height="400">
 
 
 ## Documentation of MLflow
