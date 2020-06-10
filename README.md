@@ -1,4 +1,4 @@
-# C++ version of MLflow + Dockerization of coding environment + S3 capability
+## C++ version of MLflow + Dockerization of coding environment + S3 capability
 
 MLflow is an open source platform to manage the ML lifecycle, including experimentation, reproducibility and deployment.
 This repository added the C++ version of Mlflow. Also added Dockerization of coding environment and S3 capabilities. 
@@ -68,20 +68,20 @@ which logs tracking data in ``./mlruns``. This can then be viewed with the Track
 
 ### APIs:
 
-**Python:**
+#### Python: 
 
 Checkout example file at mlflow-0.7/examples/quickstart/mlflow_tracking.py 
 
 For complete APIs checkout https://mlflow.org/docs/latest/python_api/index.html
 
-**C++:**
+#### C++: 
 
 Checkout example file at mlflow-0.7/mlflow/cpp/test/mlflow_ex.cpp
 
 
 ## Basic logging functions
 
-**Python:**
+#### Python 
 
 create_experiment() creates a new experiment and returns its ID. Runs can be launched under the experiment by passing the experiment ID to mlflow.start_run.
 
@@ -118,7 +118,7 @@ set_tag() sets a tag in key, value form.
 compelete mlflow python api: https://mlflow.org/docs/latest/python_api/index.html
 
 
-**C++:**
+#### C++ 
 
 createRun() creates a run. 
 
@@ -138,7 +138,7 @@ logDockerImageName() logs the name of the future committed current docker image.
 
 setTag() sets a tag in key, value form.
 
-**Note:** 
+#### Note 
  
   For creating an experiment in c++, use comand-line command:
 
