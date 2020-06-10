@@ -22,7 +22,7 @@ Open a aws machine which the Security Group is "all_port". SSH to the machine.
 
   1- Build a docker:
  
-     1- Have the file ecopia-zebra/mlflow-0.7/docker-mlflow/Dockerfile in your machine
+     1- Have the file mlflow-0.7/docker-mlflow/Dockerfile in your machine
      
        **Note:** In order to change the s3 address for saving artifacts, change the mlflow-0.7/docker-mlflow/Dockerfile --default-artifact-root s3://your-bucket/
     
@@ -31,8 +31,6 @@ Open a aws machine which the Security Group is "all_port". SSH to the machine.
      3- docker run -p 5000:5000 mlflow-server
 
   2- In another terminal run "docker ps" to get CONTAINER_ID. Then run: docker cp  ~/.aws/  CONTAINER_ID:/root/
-  
-
   
 
 ### Client
@@ -142,9 +140,9 @@ setTag() sets a tag in key, value form.
  
   For creating an experiment in c++, use comand-line command:
 
-    MLFLOW_TRACKING_URI=server_url:5000 python ecopia-zebra/mlflow-0.7/mlflow/cli.py experiments create name_of_experiment 
+    MLFLOW_TRACKING_URI=server_url:5000 python mlflow-0.7/mlflow/cli.py experiments create name_of_experiment 
   
   For Listing the created experiments, to get an experiment's id, name, and artifact location:
     
-    MLFLOW_TRACKING_URI=server_url:5000 python ecopia-zebra/mlflow-0.7/mlflow/cli.py experiments list
+    MLFLOW_TRACKING_URI=server_url:5000 python mlflow-0.7/mlflow/cli.py experiments list
     
