@@ -1,21 +1,22 @@
 ====================
-*C++ version of MLflow + Dockerization of coding environment + S3 capability*
+# C++ version of MLflow + Dockerization of coding environment + S3 capability
 ====================
 
 MLflow is an open source platform to manage the ML lifecycle, including experimentation, reproducibility and deployment.
-This repository is the C++ version of Mlflow.
+This repository added the C++ version of Mlflow. Also added Dockerization of coding environment and S3 capabilities. 
+![Architecture](Architecture.png)
 
-Documentation of MLflow
+### Documentation of MLflow
 -------------
 Official documentation for MLflow can be found at https://mlflow.org/docs/latest/index.html.
 
 The Github page, https://github.com/mlflow/mlflow/
 
 
-*Installing*
+## How to install
 ----------
 
-**Server**
+###Server**
 
 Open a aws machine which the Security Group is "all_port". SSH to the machine.
 
@@ -34,7 +35,7 @@ Open a aws machine which the Security Group is "all_port". SSH to the machine.
 
   
 
-**Client**
+###Client
 
 Inside your machine, have a docker and install all the requirement libraries to run your code. Also, make sure to have ecopia-zebra/mlflow-0.7.
 
@@ -65,7 +66,7 @@ This program will use `MLflow Tracking API <https://mlflow.org/docs/latest/track
 which logs tracking data in ``./mlruns``. This can then be viewed with the Tracking UI.
 
 
-APIs:
+## APIs:
 -------------------------
 **Python:**
 
