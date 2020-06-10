@@ -3,7 +3,9 @@
 MLflow is an open source platform to manage the ML lifecycle, including experimentation, reproducibility and deployment.
 This repository added the C++ version of Mlflow. Also added Dockerization of coding environment and S3 capabilities. 
 
-![Architecture](https://github.com/sepidehhosseinzadeh/mlflow-cpp/blob/master/Architecture.png =250x250)
+
+<img src="Architecture.png" alt="Architecture" width="100" height="100">
+
 
 ## Documentation of MLflow
 
